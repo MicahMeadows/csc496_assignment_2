@@ -25,7 +25,7 @@ class _CalculatorWidgetState extends State<CalculatorWidget> {
   void setNum(String num) {
     if (operator == null) {
       if (leftNum == "0") {
-        leftNum = num;
+        leftNum = "";
       }
       setState(() {
         leftNum = '$leftNum$num';
